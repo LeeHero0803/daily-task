@@ -1,6 +1,6 @@
 import type { Todo, RecurringEvent } from './types';
 
-const BASE = '/api';
+const BASE = '/todo/api';
 
 async function req<T>(url: string, options?: RequestInit): Promise<T> {
   const res = await fetch(url, {
